@@ -1,9 +1,9 @@
-<% layout('layout') %>
+<%- include('partials/header') %>
 
 <h2>Projects</h2>
 <div class="row">
   <% if (projects && projects.length) { %>
-    <% projects.forEach(function(p){ %>
+    <% projects.forEach(function(p) { %>
       <div class="col-md-6">
         <div class="card mb-3">
           <div class="card-body">
@@ -18,3 +18,5 @@
     <p>No projects yet—add some!</p>
   <% } %>
 </div>
+
+<%- include('partials/footer') %>
