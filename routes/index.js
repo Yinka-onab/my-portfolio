@@ -13,8 +13,8 @@ router.get('/about', function(req, res, next) {
 router.get('/projects', function(req, res, next) {
   
   const projects = [
-    { title: 'Project A', description: 'Short description', link: '#' },
-    { title: 'Project B', description: 'Short description', link: '#' }
+    { title: 'Project A', description: 'I made a profile with 4 pages that tells about me and projects' },
+    { title: 'Project B', description: 'I made a code that takes grades for a student and stroes it in a document' }
   ];
   res.render('projects', { title: 'Projects', projects });
 });
