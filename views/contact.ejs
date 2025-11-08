@@ -1,0 +1,21 @@
+<% layout('layout') %>
+
+<h2>Contact Me</h2>
+<p>Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+
+<!-- Simple contact form that posts to /contact (you can implement email later) -->
+<form method="post" action="/contact" class="mt-3">
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input name="name" class="form-control" required />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input name="email" type="email" class="form-control" required />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Message</label>
+    <textarea name="message" class="form-control" rows="4" required></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Send</button>
+</form>
