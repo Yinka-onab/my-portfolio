@@ -35,7 +35,11 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.status(err.status || 500).send('Internal Server Error');
 });
+
+const expressLayouts = require('express-ejs-layouts');
+app.use(expressLayouts);
+app.set('layout', 'layout'); 
 
 module.exports = app;
